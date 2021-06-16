@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+#loader{
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    height:100vh;
+    background:rgb(28, 31, 34) url('loading.svg') center no-repeat;
+}
+body{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+width: 100%;
+height: 100vh;
+background-image: linear-gradient(rgba(0, 0, 0, 0.517),rgba(0, 0, 0, 0.522)) , url("bg-1.jpg");
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+form{
+    background:#f3e5f5;
+    box-shadow: 12px 6px 22px rgba(55, 78, 59, 0.7);
+    
+}
+input{
+    border:1px solid #05549e;
+    width:230px;
+    padding:7px;
+margin:17px;
+transition: .1s linear;
+}
+legend{
+    text-align:center;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-size: 24px;
+    height:60px;
+    color:white;
+    background: rgb(53, 226, 76);
+  
+}
+#login-btn{
+    margin-left: 62px;
+    border-radius:12px;
+    text-align: center;
+    width:140px;
+    color:black;
+    background:transparent;
+    transition:.5s ease-out;
+}
+#login-btn::before{
+    content: "reg";
+    left:0;
+    bottom:100px;
+    width: 100%;
+    height: 6px;
+    color: white;
+    background-color:#000;
+}
+
+#login-btn:hover{
+background:black;
+color:white;
+transition: .4s linear;
+}
+input[type=text],input[type=password]{
+    border-radius: 8px ;
+    background: #f3e5f5;
+}
+p{
+     padding-bottom: 10px;
+     padding-left: 20px;
+     transition: .6s linear;
+     
+     color:black;
+}
+#c_new_acc{
+    text-decoration:none;
+  color:#5c6bc0;  
+  width: 100px;
+  padding-top:2px;
+  text-align:center;
+  position: relative;
+}
+#c_new_acc::after{
+    content: "";
+    position: absolute;
+    width: 0px;
+    bottom:-2px;
+    left:0;
+    border-bottom: 2px solid black;
+    border-radius:50px;
+    transition:.2s ease-out;
+}
+#c_new_acc::before{
+    content: "";
+    position: absolute;
+    width: 0px;
+    top:1px;
+    right:0;
+    border-top: 2px solid black;
+    border-radius:50px;
+    transition:.2s ease-out;
+}
+#c_new_acc:hover::before{
+    transition: 0.1s linear;
+    width: 99px;  
+}
+#c_new_acc:hover::after{
+    transition: 0.1s linear;
+    width: 99px;
+}
+#c_new_acc:hover{
+    transition: 0.2s linear;
+    background-color: #c2bfbf8a;
+}
+#show_pass{
+    margin-left:-48px;
+    padding-top: 20px;
+    position: absolute;
+    transition: .6s ease-in;
+}
+#pass_err{
+    display:none;
+    text-align: center;
+    color:red;
+    font-size: 11px;
+    font-family: 'DM Sans', sans-serif;
+    width: 208px;
+    height: 20px;
+    margin-top: -18px;
+}
+@media only screen and (max-width:360px){
+  
+  .new-acc{
+    font-size: 13px;
+    margin-left:8px;
+  }
+  
+  input{
+    margin-left:20px;
+}
+}
+@media only screen and (max-width:800px){
+  .new-acc{
+    font-size: 13px;
+    margin-left:8px;
+  }
+  
+  input{
+    margin-left:20px;
+}
+}

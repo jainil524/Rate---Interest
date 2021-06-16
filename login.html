@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet"> -->
+    <link rel="shortcut icon" href="css/loading.svg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/index.js"></script>
+    <title>Book Sharing</title>
+    <link rel="stylesheet" href="css/index.css" />
+
+</head>
+
+<body onload="myfun();">
+    <div id="loader"></div>
+    <div class="login-form">
+
+        <legend>Login</legend>
+
+        <form method="POST" onsubmit="return validation(this.form)">
+             
+            <input type="text" name="username" placeholder="Enter username"><br>
+
+            <input type="password" name="pass" placeholder="password" id="u_password">
+            <img id="show_pass" alt="password not visible" src="css/password_not_show.svg" onclick="show(this.form);">
+            <p id="pass_err"></p>
+            <br>
+            <input type="submit" value="Login" id="login-btn"><br>
+
+            <p class="new-acc">Don't have account?<a id="c_new_acc" href="Sign-up.html">Create Account</a></p>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
